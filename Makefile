@@ -53,8 +53,8 @@ serve:
 	@$(PYTHON) $(APPENGINE)/dev_appserver.py \
 	--host $(SERVE_ADDRESS) \
 	--port $(SERVE_PORT) \
+	--admin_host $(SERVER_ADDRESS) \
 	--datastore_path=$(DATASTORE_PATH) \
-	--disable_static_caching \
 	.
 
 console:
