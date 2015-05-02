@@ -51,8 +51,8 @@ rollback:
 
 serve:
 	@$(PYTHON) $(APPENGINE)/dev_appserver.py \
-	-a $(SERVE_ADDRESS) \
-	-p $(SERVE_PORT) \
+	--host $(SERVE_ADDRESS) \
+	--port $(SERVE_PORT) \
 	--datastore_path=$(DATASTORE_PATH) \
 	--disable_static_caching \
 	.
